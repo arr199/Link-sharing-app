@@ -1,13 +1,8 @@
 # Link-sharing app
 
+<img width="50%" src="./public/preview.jpg"/>
 
-
-
-<h1> Kanban Task Management Web App </h1>
-
-This web app is a Kanban-style task management tool designed to help you keep track of your work.
-
-<img width="50%" src="./public/kanban.png" width="128"/>
+### Website : https://devlinkss.netlify.app  ###
 
 ## Features
 
@@ -18,7 +13,7 @@ This web app is a Kanban-style task management tool designed to help you keep tr
 - Set a profile details information like profile picture, first name, last name, and email
 - Share a link so that people can see a preview of their profile information and links.
 
-### Website : https://devlinkss.netlify.app  ###
+
 
 ## Built with
 
