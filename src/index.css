@@ -1,0 +1,62 @@
+@font-face {
+  font-family: ins;
+  src: url("./assets/fonts/ins.ttf");
+}
+
+:root {
+  font-family:  ins ;
+  line-height: 1.5;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  background: #EEEEEE;
+
+} 
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.myheader{
+  width: 100%;
+  background: #633CFF;
+  height: 30vh;
+  display: flex;
+
+}
+.mynavbar{
+  display: flex;
+  background: white;
+
+}
+
+.box-shadow:hover{
+  box-shadow: 0 0 5px 2px rgb(187, 166, 214);
+
+}
+.box-shadow:focus{
+  box-shadow: 0 0 5px 2px rgb(187, 166, 214);
+
+}
+
+.profile-container{
+  background: url("/images/illustration-phone-mockup.svg");
+}
+
+.toaster{
+  box-shadow: 0 0 10px 1px rgb(20, 20, 20);
+  font-weight: bold;
+  
+}
+
+.dragging {
+  opacity: .1;
+
+}
+
+[list]::-webkit-calendar-picker-indicator {
+
+  display: none !important;
+
+  
+}
