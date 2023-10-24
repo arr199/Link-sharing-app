@@ -1,13 +1,13 @@
 import { PiImageLight } from 'react-icons/pi'
-import { GlobalContext } from '../Layout'
+import { GlobalContext } from '../components/Layout'
 
 import React, { type ChangeEvent, useContext, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import animations from '../../assets/motions'
+import animations from '../assets/motions'
 import { doc, getFirestore, setDoc } from 'firebase/firestore'
 import { initializeApp } from 'firebase/app'
-import { firebaseConfig } from '../../utils/API'
-import { useGetCurrentUser } from '../../utils/hooks'
+import { firebaseConfig } from '../utils/API'
+import { useGetCurrentUser } from '../utils/hooks'
 
 const app = initializeApp(firebaseConfig)
 const db = getFirestore(app)

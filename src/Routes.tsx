@@ -1,18 +1,18 @@
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom'
 
 // AUTH COMPONENT
-import { AuthProvider } from './components/auth/AuthProvider'
+import { AuthProvider } from './auth/AuthProvider'
 // COMPONENTS
-import { NoPage } from './components/pages/Nopage'
-import { Home } from './components/pages/Home'
-import { Links } from './components/layout/Links'
-import { LoginPage } from './components/pages/LoginPage'
-import { SignUp } from './components/pages/SignUp'
-import { ProfileDetails } from './components/layout/ProfileDetails'
-import { Preview } from './components/pages/Preview'
+import { NoPage } from './pages/Nopage'
+import { Home } from './pages/Home'
+import { Links } from './layout/Links'
+import { LoginPage } from './pages/LoginPage'
+import { SignUp } from './pages/SignUp'
+import { ProfileDetails } from './layout/ProfileDetails'
+import { Preview } from './pages/Preview'
 import { Layout } from './components/Layout'
-import { NonAuthUsers } from './components/auth/NonAuthUsers'
-import { AuthUsers } from './components/auth/AuthUsers'
+import { NonAuthUsers } from './auth/NonAuthUsers'
+import { AuthUsers } from './auth/AuthUsers'
 
 export function Router (): JSX.Element {
   const router = createBrowserRouter(createRoutesFromElements(

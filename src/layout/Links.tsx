@@ -1,20 +1,20 @@
 import React, { useContext, useState } from 'react'
 import { nanoid } from 'nanoid'
-import { API, firebaseConfig } from '../../utils/API.ts'
+import { API, firebaseConfig } from '../utils/API.ts'
 import { AnimatePresence, motion } from 'framer-motion'
-import animations from '../../assets/motions.ts'
+import animations from '../assets/motions.ts'
 
 // ICONS
 import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 import { PiFloppyDiskBackLight } from 'react-icons/pi'
 // CONTEXT
-import { GlobalContext } from '../Layout.tsx'
+import { GlobalContext } from '../components/Layout.tsx'
 // COMPONENTS
-import { DropDownMenu } from '../DropDownMenu.tsx'
-import { UrlInput } from '../UrlInput.tsx'
+import { DropDownMenu } from '../components/DropDownMenu.tsx'
+import { UrlInput } from '../components/UrlInput.tsx'
 // UTILS
-import { verifyUrl } from '../../utils/functions.ts'
-import { useGetCurrentUser } from '../../utils/hooks.tsx'
+import { verifyUrl } from '../utils/functions.ts'
+import { useGetCurrentUser } from '../utils/hooks.tsx'
 import { initializeApp } from 'firebase/app'
 import { getFirestore, setDoc, doc } from 'firebase/firestore'
 

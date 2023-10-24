@@ -2,7 +2,7 @@ import { Outlet } from 'react-router'
 import { Header } from '../layout/Header'
 import { Phone } from '../layout/Phone'
 import { initializeApp } from 'firebase/app'
-import { firebaseConfig } from '../../utils/API'
+import { firebaseConfig } from '../utils/API'
 
 initializeApp(firebaseConfig)
 

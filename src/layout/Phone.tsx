@@ -1,16 +1,16 @@
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
 import React, { useContext, useState } from 'react'
-import { GlobalContext } from '../Layout'
+import { GlobalContext } from '../components/Layout'
 
 // ICONS
 import { BiRightArrowAlt } from 'react-icons/bi'
-import { colorClass } from '../../utils/functions'
+import { colorClass } from '../utils/functions'
 
-import { Icons } from '../Icons'
+import { Icons } from '../components/Icons'
 import { motion } from 'framer-motion'
-import animations from '../../assets/motions'
+import animations from '../assets/motions'
 
-import { API } from '../../utils/API'
+import { API } from '../utils/API'
 
 export function Phone (): JSX.Element {
   const { links, personalInfo } = useContext(GlobalContext)

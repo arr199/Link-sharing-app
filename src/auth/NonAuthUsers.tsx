@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
 
 import { Outlet, useNavigate } from 'react-router'
-import { useGetCurrentUser } from '../../utils/hooks'
+import { useGetCurrentUser } from '../utils/hooks'
 import { useEffect } from 'react'
 
 export function NonAuthUsers (): any {
