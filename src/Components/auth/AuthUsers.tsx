@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
 
 import { Outlet, useNavigate } from 'react-router'
-import { useGetCurrentUser } from '../utils/hooks'
+import { useGetCurrentUser } from '../../utils/hooks'
 import { useContext, useEffect } from 'react'
-import { GlobalContext } from './Layout'
+import { GlobalContext } from '../Layout'
 import { getFirestore, doc, getDoc } from 'firebase/firestore'
 import { initializeApp } from 'firebase/app'
-import { firebaseConfig } from '../utils/API'
+import { firebaseConfig } from '../../utils/API'
 
 const app = initializeApp(firebaseConfig)
 const db = getFirestore(app)

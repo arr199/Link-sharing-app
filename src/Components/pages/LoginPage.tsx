@@ -3,7 +3,7 @@ import { AiFillLock } from 'react-icons/ai'
 import { NavLink, useNavigate } from 'react-router-dom'
 import React, { useState } from 'react'
 import { getAuth, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
-import { firebaseConfig } from '../utils/API'
+import { firebaseConfig } from '../../utils/API'
 import { FcGoogle } from 'react-icons/fc'
 import { initializeApp } from 'firebase/app'
 

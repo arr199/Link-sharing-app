@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
 import { initializeApp } from 'firebase/app'
-import { firebaseConfig } from '../utils/API'
+import { firebaseConfig } from '../../utils/API'
 import { getAuth, onAuthStateChanged, type User } from 'firebase/auth'
 import { useEffect, useState, createContext } from 'react'
 

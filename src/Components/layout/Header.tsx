@@ -3,11 +3,11 @@ import { AiOutlineLink } from 'react-icons/ai'
 import { BiUserCircle } from 'react-icons/bi'
 import { GoSignOut } from 'react-icons/go'
 import { initializeApp } from 'firebase/app'
-import { firebaseConfig } from '../utils/API'
+import { firebaseConfig } from '../../utils/API'
 import { getAuth, signOut } from 'firebase/auth'
-import { GlobalContext } from './Layout'
+import { GlobalContext } from '../Layout'
 import { useContext } from 'react'
-import { useGetCurrentUser } from '../utils/hooks'
+import { useGetCurrentUser } from '../../utils/hooks'
 
 initializeApp(firebaseConfig)
 const auth = getAuth()

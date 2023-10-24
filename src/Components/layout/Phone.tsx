@@ -1,16 +1,16 @@
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
 import React, { useContext, useState } from 'react'
-import { GlobalContext } from './Layout'
+import { GlobalContext } from '../Layout'
 
 // ICONS
 import { BiRightArrowAlt } from 'react-icons/bi'
-import { colorClass } from '../utils/functions'
+import { colorClass } from '../../utils/functions'
 
-import { Icons } from './Icons'
+import { Icons } from '../Icons'
 import { motion } from 'framer-motion'
-import animations from '../assets/motions'
+import animations from '../../assets/motions'
 
-import { API } from '../utils/API'
+import { API } from '../../utils/API'
 
 export function Phone (): JSX.Element {
   const { links, personalInfo } = useContext(GlobalContext)
@@ -29,14 +29,12 @@ export function Phone (): JSX.Element {
           {/* ABSOLUTE CONTAINER */}
           <div className="flex flex-col items-center  gap-2 border border-[#737373] p-4  h-full rounded-[2.375rem] ">
             {/* IMAGE */}
-
             {personalInfo && Object.values(personalInfo).some(e => e !== '')
               ? < >
                 <div className=" bg-[#EEEEEE] rounded-full w-[6rem] h-[6rem]  mt-4 mb-4 ">
                   {personalInfo.imgUrl !== '' && <motion.img className='rounded-full h-full w-full' alt='profile picture' src={personalInfo.imgUrl} {...animations.scaleAnimationRightToLeftExitCenter()} ></motion.img>}
                 </div>
                 {/* NAME AND EMAIL FILLED */}
-
                 <motion.h1 {...animations.scaleAnimationRightToLeftExitCenter()} className="text-[18px] text-[#333333] ">{personalInfo.firstName} {personalInfo.lastName}</motion.h1>
                 <motion.span {...animations.scaleAnimationRightToLeftExitCenter()} className="text-[#737373] text-[14px]">{personalInfo.email}</motion.span>
               </>
@@ -48,9 +46,7 @@ export function Phone (): JSX.Element {
 
                 <span className="text-[#737373] text-[14px]  px-12 py-1  bg-[#EEEEEE] rounded-lg "></span>
               </>}
-
             {/* LINKS */}
-
             <motion.div className="flex flex-col justify-start w-full gap-4 mt-6 " {...animations.scaleAnimationRightToLeftExitCenter()}>
               {Array(API.NUMBER_OF_LINKS_PER_PAGE).fill(null).map((_, index) => (
                 <React.Fragment key={index} >

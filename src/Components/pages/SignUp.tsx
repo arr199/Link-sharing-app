@@ -3,7 +3,7 @@ import { MdEmail } from 'react-icons/md'
 import { AiFillLock } from 'react-icons/ai'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { initializeApp } from 'firebase/app'
-import { firebaseConfig } from '../utils/API'
+import { firebaseConfig } from '../../utils/API'
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
 
 initializeApp(firebaseConfig)

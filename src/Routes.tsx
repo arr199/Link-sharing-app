@@ -1,18 +1,18 @@
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom'
 
 // AUTH COMPONENT
-import { AuthProvider } from './Components/AuthProvider'
+import { AuthProvider } from './components/auth/AuthProvider'
 // COMPONENTS
-import { NoPage } from './Components/Nopage'
-import { Home } from './Components/Home'
-import { Links } from './Components/Links'
-import { LoginPage } from './Components/LoginPage'
-import { SignUp } from './Components/SignUp'
-import { ProfileDetails } from './Components/ProfileDetails'
-import { Preview } from './Components/Preview'
-import { Layout } from './Components/Layout'
-import { NonAuthUsers } from './Components/NonAuthUsers'
-import { AuthUsers } from './Components/AuthUsers'
+import { NoPage } from './components/pages/Nopage'
+import { Home } from './components/pages/Home'
+import { Links } from './components/layout/Links'
+import { LoginPage } from './components/pages/LoginPage'
+import { SignUp } from './components/pages/SignUp'
+import { ProfileDetails } from './components/layout/ProfileDetails'
+import { Preview } from './components/pages/Preview'
+import { Layout } from './components/Layout'
+import { NonAuthUsers } from './components/auth/NonAuthUsers'
+import { AuthUsers } from './components/auth/AuthUsers'
 
 export function Router (): JSX.Element {
   const router = createBrowserRouter(createRoutesFromElements(
@@ -31,7 +31,7 @@ export function Router (): JSX.Element {
                 <Route path='login' element={<LoginPage></LoginPage>} />
                 <Route path='signup' element={<SignUp></SignUp>}/>
             </Route>
-             
+
               {/* preview page */}
               <Route path='/preview/:id' element={<Preview/>} />
               {/* page not found */}

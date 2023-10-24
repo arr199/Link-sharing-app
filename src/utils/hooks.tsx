@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { AuthContext } from '../Components/AuthProvider'
+import { AuthContext } from '../components/auth/AuthProvider'
 
 //   USE THE GLOBAL AUTHENTICATION CONTEXT WITH THIS HOOK
 export function useGetCurrentUser (): any {
