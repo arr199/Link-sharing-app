@@ -4,7 +4,7 @@ A user-friendly tool that enables individuals to share web links or URLs with ot
 
 <img width="50%" src="./public/preview.jpg"/>
 
-### Website : https://devlinkss.netlify.app  ###
+### 🌐 Website : https://devlinkss.netlify.app  ###
 
 ## Features
 
@@ -13,8 +13,6 @@ A user-friendly tool that enables individuals to share web links or URLs with ot
 - Drag and drop links to reorder them.
 - Set a profile details information like profile picture, first name, last name, and email.
 - Share a link so that people can see a preview of their profile information and links while maintaining the security and privacy of their data.
-
-
 
 ## Built with
 
